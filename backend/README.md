@@ -12,4 +12,21 @@ npm install --save-dev jest
 npm install --save-dev @types/jest
 npm install --save-dev ts-jest
 npm install dotenv --save
+npm install aws-sdk
+npm install --save-dev @types/node
+npm i formidable
+npm i --save-dev @types/formidable
+npm install express-openid-connect
 ```
+
+# Left Off
+- Need to configure AWS SDK, Controller, Tests to Allow API Access to Store Files in S3
+- Need to configure S3 buckets in multiple regions / Use Terraform
+- Implement Auth0 Auth in Routes / Rules to Check User Location
+- Launch Darkly Flag / Node Implementation to Check User Location Context
+
+# Add note to discuss security implementations outside the scope of this project
+- Scanning file uploads
+- Rate limiting upload routes
+- Advanced user validation and dynamically connecting documents to user
+- Randomly generated document IDs
