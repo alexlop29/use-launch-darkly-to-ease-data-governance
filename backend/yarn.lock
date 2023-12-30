@@ -605,6 +605,28 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@launchdarkly/js-sdk-common@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@launchdarkly/js-sdk-common/-/js-sdk-common-2.1.0.tgz"
+  integrity sha512-163KRinNJgoh9ybup2BHr9jHzTsnNlb2AknLgV2edCe0cZoiiCOLTzo4KDJFY7B7EImMMyRmTefXvb6d64eF8Q==
+
+"@launchdarkly/js-server-sdk-common@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/@launchdarkly/js-server-sdk-common/-/js-server-sdk-common-2.1.2.tgz"
+  integrity sha512-5iW/Deuj/6B5hELvQgxICNv5TGL1t+t/w5EpSNpndmmubPYGgLGn/51Ur+MzDnbHsVifnBbRGNhiekMEBDXJZw==
+  dependencies:
+    "@launchdarkly/js-sdk-common" "2.1.0"
+    semver "7.5.4"
+
+"@launchdarkly/node-server-sdk@^9.0.5":
+  version "9.0.5"
+  resolved "https://registry.npmjs.org/@launchdarkly/node-server-sdk/-/node-server-sdk-9.0.5.tgz"
+  integrity sha512-DhbXwQdJ38zvcgp0E2j2fzWSYmySdHLe8q6FsXypwwSc6yz31f/A92kIJiCIRG2QCcmnnrVlSmVMjyaCnoFG4A==
+  dependencies:
+    "@launchdarkly/js-server-sdk-common" "2.1.2"
+    https-proxy-agent "^5.0.1"
+    launchdarkly-eventsource "2.0.1"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1013,6 +1035,13 @@ acorn-jsx@^5.3.2:
   version "8.11.3"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.11.3.tgz"
   integrity sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==
+
+agent-base@6:
+  version "6.0.2"
+  resolved "https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz"
+  integrity sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==
+  dependencies:
+    debug "4"
 
 aggregate-error@^3.1.0:
   version "3.1.0"
@@ -1664,6 +1693,13 @@ debug@2.6.9:
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
+
+debug@4:
+  version "4.3.4"
+  resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+  dependencies:
+    ms "2.1.2"
 
 decompress-response@^6.0.0:
   version "6.0.0"
@@ -2593,6 +2629,14 @@ http2-wrapper@^1.0.0-beta.5.2:
     quick-lru "^5.1.1"
     resolve-alpn "^1.0.0"
 
+https-proxy-agent@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz"
+  integrity sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==
+  dependencies:
+    agent-base "6"
+    debug "4"
+
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
@@ -3364,6 +3408,11 @@ kleur@^3.0.3:
   version "3.0.3"
   resolved "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
+
+launchdarkly-eventsource@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/launchdarkly-eventsource/-/launchdarkly-eventsource-2.0.1.tgz"
+  integrity sha512-zyceGtRni8ct4es5hH8Q+2evvttItb5lOKMm8JtudZbfQFfVdH55NitgJQoGTRYkIvyMGjcaXnyt0FlzCTfspA==
 
 leven@^3.1.0:
   version "3.1.0"
@@ -4140,6 +4189,13 @@ semver@^7.5.3:
     lru-cache "^6.0.0"
 
 semver@^7.5.4:
+  version "7.5.4"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.5.4.tgz"
+  integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@7.5.4:
   version "7.5.4"
   resolved "https://registry.npmjs.org/semver/-/semver-7.5.4.tgz"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==

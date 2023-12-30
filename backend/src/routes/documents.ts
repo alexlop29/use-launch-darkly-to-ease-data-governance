@@ -13,6 +13,7 @@ documentRoute.post(
   upload.single("file"),
   async (req, res) => {
     let userSub = req.oidc.user?.sub;
+    let userTimeZone = req.oidc.user?.timeZone;
     let file = req.file;
     if (!file) {
       res.status(400).json({
@@ -21,7 +22,7 @@ documentRoute.post(
       return;
     }
     const documents = new DocumentsController();
-    const uploadFile = await documents.addDocument(userSub, file);
+    const uploadFile = await documents.addDocument(userSub, userTimeZone, file);
     if (uploadFile.hasOwnProperty("Error")) {
       res.status(500).json(uploadFile);
       return;

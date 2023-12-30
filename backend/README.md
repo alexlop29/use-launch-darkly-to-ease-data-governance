@@ -19,6 +19,7 @@ npm i --save-dev @types/formidable
 npm install express-openid-connect
 npm install --save multer
 npm i --save-dev @types/multer
+npm install @launchdarkly/node-server-sdk
 ```
 
 Remove use of formiddable - switching to multer
@@ -45,3 +46,11 @@ https://stackoverflow.com/questions/63697348/how-do-i-know-whether-my-user-is-fr
 
 Launch Darkly
 https://docs.launchdarkly.com/sdk/server-side/node-js
+https://stackoverflow.com/questions/57871661/how-can-i-programmatically-set-the-user-details-for-launch-darkly-in-my-react-ap
+https://stackoverflow.com/questions/71173548/how-are-users-identified-in-launchdarkly
+
+LEFT OFF
+
+- Finish Configuring SDK
+- Dynamically create context using the kind: user, key: auth0Id, timeZone: auth0.timeZone
+- Update the feature flag targetting rule to select a timeZone in EU.
