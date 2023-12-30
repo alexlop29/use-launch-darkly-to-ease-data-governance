@@ -23,13 +23,6 @@ npm i --save-dev @types/multer
 
 Remove use of formiddable - switching to multer
 
-# Left Off
-
-- Need to configure S3 buckets in multiple regions / Use Terraform
-- Implement Auth0 Rules to Check User Location
-- Launch Darkly Flag / Node Implementation to Check User Location Context
-- Need to add tests
-
 # Add note to discuss security implementations outside the scope of this project
 
 - Scanning file uploads
