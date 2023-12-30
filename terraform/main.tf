@@ -5,11 +5,17 @@ provider "aws" {
 
 provider "aws" {
   region = "eu-west-1"
-  alias = "eu-west-1"
+  alias  = "eu-west-1"
 }
 
 provider "launchdarkly" {
   access_token = var.launchdarkly_access_token
+}
+
+provider "auth0" {
+  domain        = var.auth0_domain
+  client_id     = var.auth0_client_id
+  client_secret = var.auth0_client_secret
 }
 
 terraform {
@@ -30,6 +36,10 @@ terraform {
     launchdarkly = {
       source  = "launchdarkly/launchdarkly"
       version = "2.17.0"
+    }
+    auth0 = {
+      source  = "auth0/auth0"
+      version = "1.1.1"
     }
   }
 }

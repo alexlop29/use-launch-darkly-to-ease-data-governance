@@ -39,6 +39,9 @@ Resources:
 
 Auth0
 https://community.auth0.com/t/getting-current-location-using-auth0-rules/83826
+https://auth0.com/blog/country-based-access-with-auth0-actions/
+https://auth0.com/docs/customize/actions/flows-and-triggers/login-flow/event-object
+https://stackoverflow.com/questions/63697348/how-do-i-know-whether-my-user-is-from-eu-countries
 
 Launch Darkly
 https://docs.launchdarkly.com/sdk/server-side/node-js

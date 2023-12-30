@@ -9,6 +9,5 @@ Demonstrates using launch darkly kill switches and contexts to ease data governa
 - [Using LaunchDarkly with TypeScript](https://launchdarkly.com/blog/using-launchdarkly-with-typescript/)
 
 # Left Off
-- Implement Auth0 Rules to Check User Location
 - Launch Darkly Flag / Node Implementation to Check User Location Context
 - Need to add tests
