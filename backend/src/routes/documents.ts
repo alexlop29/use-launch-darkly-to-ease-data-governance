@@ -1,6 +1,6 @@
 import express from "express";
 import { requiresAuth } from "express-openid-connect";
-import { DocumentsController } from "../controller/documents";
+import { DocumentsController } from "../controllers/documents";
 import { upload } from "../config/multer";
 
 const documentRoute = express.Router();
@@ -21,8 +21,8 @@ documentRoute.post(
       return;
     }
     const documents = new DocumentsController();
-    const uploadFile = documents.addDocument(userSub, file);
-    if (uploadFile.hasOwnProperty("Error")){
+    const uploadFile = await documents.addDocument(userSub, file);
+    if (uploadFile.hasOwnProperty("Error")) {
       res.status(500).json(uploadFile);
       return;
     }

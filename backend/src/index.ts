@@ -1,11 +1,19 @@
 import express from "express";
 import { EXPRESS_PORT } from "./config/environment";
-import { auth } from "express-openid-connect";
+import { auth, requiresAuth } from "express-openid-connect";
 import { config } from "./config/auth";
 import { documentRoute } from "./routes/documents";
 
 const app = express();
 app.use(auth(config));
+
+app.get("/", (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? "Logged in" : "Logged out");
+});
+
+app.get("/profile", requiresAuth(), (req, res) => {
+  res.send(JSON.stringify(req.oidc.user));
+});
 
 app.use("/documents", documentRoute);
 
