@@ -21,7 +21,7 @@ app.use("/documents", documentRoute);
 try {
   async () => {
     await client.waitForInitialization();
-  }
+  };
   app.listen(EXPRESS_PORT, () => {
     console.log(`Server is running on http://localhost:${EXPRESS_PORT}`);
   });
