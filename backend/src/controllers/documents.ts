@@ -9,7 +9,6 @@ class DocumentsController {
     this.s3 = new S3({ apiVersion: "2006-03-01" });
   }
 
-  // Improve error handling
   async addDocument(
     userSub: string,
     userTimeZone: string,
