@@ -1,7 +1,5 @@
 ## About
-Demonstrates using launch darkly kill switches and contexts to ease data governance
-
-In a [recent blog post](https://launchdarkly.com/blog/what-is-a-kill-switch-software-development/), Launch Darkly provides insight into the potential use case of a `kill switch` feature flag. A `kill switch` provides the capability of seamlessly enabling or disabling a feature from the Launch Darkly dashboard. Launch Darkly suggests leveraging `kill switches` to ease compliance and regulation management, such as enabling data retention for users based on their geographic location. `use-launch-darkly-to-ease-data-governance` demonstrates how to use Auth0's geolocation features, distributed AWS resources, and Launch Darkly to dynamically store user data.
+In a [recent blog post](https://launchdarkly.com/blog/what-is-a-kill-switch-software-development/), Launch Darkly provides insight into the potential use case of a `kill switch` feature flag. A `kill switch` seamlessly enables or disables a feature from the Launch Darkly dashboard. Launch Darkly suggests leveraging `kill switches` to ease compliance and regulation management, such as configuring data retention based on the user's geographic location. `use-launch-darkly-to-ease-data-governance` demonstrates how to use Auth0's geolocation features, distributed AWS resources, and Launch Darkly to store user data dynamically.
 
 ## 🔧 Core libraries
 - [Node.js(20.10.0)](https://nodejs.org/en)
@@ -27,7 +25,7 @@ In a [recent blog post](https://launchdarkly.com/blog/what-is-a-kill-switch-soft
 - [Launch Darkly Provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/latest/docs)
 
 ## 🔈 Disclaimer
-The scope of this project is limited to showcasing how to leverage Auth0 Actions, AWS S3 Buckets, and Launch Darkly kill switches to dynamically toggle the storage location based on the user's geographic information. Given the minimalastic approach taken, there are several areas of potential improvements, such as rate-limiting the upload route, scanning the user upload for malicious input, randomly-generated file names, and improved error handling. While these functionalties have not yet been included, please `watch` the project as they will be added soon.
+The scope is limited to showcasing how to leverage Auth0 Actions, AWS S3 Buckets, and Launch Darkly kill switches to dynamically toggle the storage location based on the user's geographic information. Given the minimalistic approach, the project lacks several improvements, such as rate-limiting the upload route, scanning the user upload for malicious input, implementing randomly-generated file names, and improving error handling. Please continue to `watch` the project for updates.
 
 ## 🚧 To Do
 - Clean up.
